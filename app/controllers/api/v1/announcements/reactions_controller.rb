@@ -9,6 +9,9 @@ class Api::V1::Announcements::ReactionsController < Api::BaseController
 
   def update
     @announcement.announcement_reactions.create!(account: current_account, name: params[:id])
+    @announcement.announcement_reactions.create!(account: current_account, name: params[:id])
+    @announcement.announcement_reactions.create!(account: current_account, name: params[:id])
+    @announcement.announcement_reactions.create!(account: current_account, name: params[:id])
     render_empty
   end
 
